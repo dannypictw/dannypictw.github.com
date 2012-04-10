@@ -1,10 +1,16 @@
 ---
 layout: post
-title: "hello_world"
-date: 2012-04-10 14:47
+title: "hello-world"
+date: 2012-04-10 15:23
 comments: true
 categories: 
 ---
-```hello
-printlen 1+2+3
+```ruby
+bbb
 ```
+```java
+Integer.valueof("123");
+```
+{% codeblock Time to be Awesome - awesome.rb lang:ruby%}
+puts "Awesome!" unless lame
+{% endcodeblock %}
