@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://dannypictw.github.com/atom.xml" rel="self"/>
   <link href="http://dannypictw.github.com/"/>
-  <updated>2012-04-11T00:05:38+08:00</updated>
+  <updated>2012-04-11T00:07:56+08:00</updated>
   <id>http://dannypictw.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -18,7 +18,7 @@
     <link href="http://dannypictw.github.com/blog/2012/04/10/hello-octopress/"/>
     <updated>2012-04-10T23:46:00+08:00</updated>
     <id>http://dannypictw.github.com/blog/2012/04/10/hello-octopress</id>
-    <content type="html"><![CDATA[<p>´ú¤U°աI</p>
+    <content type="html"><![CDATA[<p>octopress啟用完成！讚！</p>
 ]]></content>
   </entry>
   
