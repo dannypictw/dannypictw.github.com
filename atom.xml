@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://dannypictw.github.com/atom.xml" rel="self"/>
   <link href="http://dannypictw.github.com/"/>
-  <updated>2012-04-11T00:07:56+08:00</updated>
+  <updated>2012-04-12T09:49:56+08:00</updated>
   <id>http://dannypictw.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,57 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[spinner_setselection]]></title>
+    <link href="http://dannypictw.github.com/blog/2012/04/12/spinner-setselection/"/>
+    <updated>2012-04-12T09:46:00+08:00</updated>
+    <id>http://dannypictw.github.com/blog/2012/04/12/spinner-setselection</id>
+    <content type="html"><![CDATA[<p>如果在更改Spinner一開始的預設值為非第1個選擇後，</p>
+
+<p>有時會發現無法立即依程式變時該怎麼辦呢？</p>
+
+<p>在使用Spinner之後如果要更改預設「已選擇」的選項通常</p>
+
+<p>都會使用：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">setSelection</span><span class="o">(</span><span class="kt">int</span> <span class="n">position</span><span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>例如：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">spinner</span><span class="o">.</span><span class="na">setSelection</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="err">即選擇第</span><span class="mi">2</span><span class="err">個選項</span><span class="o">(</span><span class="n">index</span><span class="err">從</span><span class="mi">0</span><span class="err">開始</span><span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>不過有時會發現怎麼設定後會無法立即顯示？</p>
+
+<p>其實它會經過某一段時間後才會變更並且觸發OnItemSelectedListener</p>
+
+<p>事件的，但時有實在太慢，所以可以將程式改為：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">setSelection</span><span class="o">(</span><span class="kt">int</span> <span class="n">position</span><span class="o">,</span> <span class="kt">boolean</span> <span class="n">animate</span><span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>即：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">spinner</span><span class="o">.</span><span class="na">setSelection</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="kc">true</span><span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[hello-octopress]]></title>
